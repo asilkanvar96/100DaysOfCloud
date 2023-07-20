@@ -14,16 +14,15 @@
 Fill in your details where you see this icon ✍️
 We have provided a sample Day Journey entry staring at 0. You can delete this example.
 
-## [✍️ Your Name]'s Cloud Journey
+## Asilkan's Cloud Journey
 
-[✍️ Introduce yourself]
+Hi, I am Asilkan. I'm an developer working on Data Science and Machine Learning, but also a cloud enthusiast, especially AWS! 
 
-[✍️ Tell us why you started this challenge]
+I started to challenge to track my cloud journey and use github regularly to challenge myself everyday.
 
-[✍️ Tell us where you want to be at the end of the challenge]
+I got my Cloud Practioner Certificate and looking forward to get Solution Architect Associate until end of the year.
 
-- [✍️ Link to your Twitter](https://twitter.com/username)
-- [✍️ Link to your LinkedIn](https://www.linkedin.com/in/username)
+- [LinkedIn](https://www.linkedin.com/in/asilkanvar/)
 
 ## Stepping out the door
 

@@ -18,13 +18,11 @@ Object storage often follows a WORM (write once, read many) model.
 
 - Tree-like hierarchy (consist of folders and subfolders)
 - Treats files as a singular unit and each file has metadata(such as file name, file size, date the file was created)
-- İdeal for centralized access to files for sharing multiple host computers.
-    
-    **Use-cases**
-    
-    - Large content repositories
-    - Development environments
-    - User home directories
+- Ideal for centralized access to files for sharing multiple host computers.
+  **Use-cases**
+  - Large content repositories
+  - Development environments
+  - User home directories
 
 **Block Storage**
 
@@ -32,11 +30,9 @@ Object storage often follows a WORM (write once, read many) model.
 - When data is requested, correct order to form of a file orgazined and present back to the requestor.
 - Its fast fast and use less bandwidth
 - You can change one block (piece of the file) that contains a character even if you want to change **one character** in a GBs of file.
-    
-    **Use-cases**
-    
-    - for low-latency operations
-    - high-performance enterprise workloads(ERP)
+  **Use-cases**
+  - for low-latency operations
+  - high-performance enterprise workloads(ERP)
 
 **Object Storage**
 
@@ -45,12 +41,9 @@ Object storage often follows a WORM (write once, read many) model.
 - Each object is a file with unique identifier.
 - When you want to change one character, the entire file must be updated.
 - Almost any types of data can be stored.
-    
-    **Use-cases**
-    
-    - large data sets
-    - unstuctured files like media assets, static assests, photos
-    
+  **Use-cases**
+  - large data sets
+  - unstuctured files like media assets, static assests, photos
 
 **Storage for EC2**
 
@@ -61,16 +54,12 @@ Like an external storage → externally attach to your instance via network conn
 - Can be attach multiple EC2 instances at one time with EBS multi-attach features, but mostly use one-to-one relationship with an EC2 instance.
 - can be detach from one instance and attach another instance in same AZ to reach the data. That means since its separate from instance, it can still be reachable when the instance(computer) goes down.
 - Fixed limit for storage since its external and scalable it can be.
-    
-    **Use-Cases**
-    
-    - OS → it can be used like EBS-backed AMIs
-    - DB
-    - ERP → since its reliable to run business-critical apps.
-    - Throughput-intensive apps
-    
-    Types are  - HDD and SSD
-    
+  **Use-Cases**
+  - OS → it can be used like EBS-backed AMIs
+  - DB
+  - ERP → since its reliable to run business-critical apps.
+  - Throughput-intensive apps
+    Types are - HDD and SSD
 
 **Snapshots**
 
@@ -80,7 +69,7 @@ Like an external storage → externally attach to your instance via network conn
 
 **Instance Storage**
 
- Like an internal storage → directly attach to the underlying physical server
+Like an internal storage → directly attach to the underlying physical server
 
 - Ephemeral (temporary), lifecycle of your data ties with lifecycle of your EC2 (if you delete your instance instance store is also deleted as well.)
 - has a speed advantage which can be helpful for a cluster-based workloads that needs to replicate your data. Also ideal for temporary storages that changes frequently like buffers, caches…
@@ -92,21 +81,20 @@ Storage that your data can be retrievable from anywhere on the web.
 - Object storage type which means that characteristics are flat structure, unique identifiers and file combined with metadata.
 - Regional level and need to be selected when you created a bucket. (which is a must to upload a file in S3)
 - Bucket name should be unique universally. (Object name is referred as key name)
-    
-    **Use cases** → Backups, media hosting, data lakes, static websites.
-    
+  **Use cases** → Backups, media hosting, data lakes, static websites.
 - Private by default and can be make it public but most of the cases IAM policies are used for more specific reaches from the internet.
 - Server-side encryption and client-side encryption are used to encrypt in transit u can use client-side encryption or SSL.
 - **Versioning** makes your bucket can keep multiple version of single object. Also protects you from accidental deletions and overwrites. (for deletion it uses marker.)
 
 **Storage Classes**
 
-------------
+---
+
 ### **Databases**
 
 **RDS**
 
-Managed relational database. It is managed infrastructure based tasks like patching, scaling restoring by itself. 
+Managed relational database. It is managed infrastructure based tasks like patching, scaling restoring by itself.
 RDS Engines are:
 
 - **Commercial:** Oracle, SQL Server
@@ -135,7 +123,7 @@ Subnet for DB should be private.
 
 **DynamoDB**
 
-Collection of items which are collection of attributes. 
+Collection of items which are collection of attributes.
 
 - Need an unique partition key(primary key) and optionally sort key.
 - offers encryption at rest

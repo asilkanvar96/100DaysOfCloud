@@ -8,11 +8,9 @@ Metric is a collection of data point which are gathered from your resources
 
 $$
  Metrics / Time = Statistics
-
-
 $$
 
-    **Samples:**
+**Samples:**
 
 For EC2 : CPU utilization
 For S3: request of reading or writing objects

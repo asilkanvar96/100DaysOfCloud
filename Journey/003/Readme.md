@@ -15,6 +15,7 @@
 When you have activate-passive system, you are using vertical scaling with stateful. (only one instance is available at a time). It may be good and secure for low load systems which one of them can store meaningful data.
 
 - **Steps are like this;**
+
   **1-** Stop passive instance since its not getting any traffic
 
   **2-** Change size or type of instance to match for needs. Then, start the instance.

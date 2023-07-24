@@ -12,15 +12,16 @@
 
 **Issue with Vertical Scaling**
 
-When you have activate-passive system, you are using vertical scaling with stateful. (only one instance is available at a time). It may be good and secure for low load systems which one of them can store meaningful data . Steps are like this;
+When you have activate-passive system, you are using vertical scaling with stateful. (only one instance is available at a time). It may be good and secure for low load systems which one of them can store meaningful data.
 
-    **1-** Stop passive instance since its not getting any traffic
+- **Steps are like this;**
+  **1-** Stop passive instance since its not getting any traffic
 
-    **2-** Change size or type of instance to match for needs. Then, start the instance.
+  **2-** Change size or type of instance to match for needs. Then, start the instance.
 
-    **3-** Shift the traffic to passive instance that means turn it to activate instance.
+  **3-** Shift the traffic to passive instance that means turn it to activate instance.
 
-    **4-** Stop the previous activate instance in order to make this instance the passive instance and change the size or type in order to match current activate instance.
+  **4-** Stop the previous activate instance in order to make this instance the passive instance and change the size or type in order to match current activate instance.
 
 We got two problem about this flow which are **limitation** and **not an automated workload**. Manual work for this flow can be bothersome and cause a potential human based error. For the limitation part, when you reached the scalability limit of an instance, you should create another active-passive system in order to match with needs.
 

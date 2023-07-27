@@ -1,6 +1,6 @@
 <!-- This is a template you can use for quick progress days. It removes a lot of the steps we encourage you to share in the longer template 000-DAY-ARTICLE-LONG-TEMPLATE.MD-->
 
-# New post title here
+# Compute, Database, Event-Driven Architectures, Decoupling
 
 ## Cloud Research
 
@@ -23,7 +23,7 @@ API gateway is fully managed to create, publish, maintain, monitor and sucre API
 - It can handless accept and process up to hundreds of thousands of concurrent API calls, traffic management, CORS support, authorization and access control, throttling, monitoring, and API version management.
 - It has no minimum fees or startup cost. You only pay API calls you receive and the amount of data transferred out. Its also has tiered pricing model.
 
-<img src='C:\Users\Asilkan\Desktop\100DaysOfCloud\100DaysOfCloud\images\API_gateway.png'>
+<img src='/images/API_gateway.png'>
 
 ### **EC2**
 
@@ -44,7 +44,7 @@ Fully managed container orchestration service that can be used for deploy, manag
 - Perform system operations such as creating custom scaling and capacity rules, and observe and query data from application logs and telemetry.
 - Automatic scaling and pay-as-you-go pricing across multiple AWS compute can reduce cost.
 
-<img src='C:\Users\Asilkan\Desktop\100DaysOfCloud\100DaysOfCloud\images\ECS.png'>
+<img src='/images/ECS.png'>
 
 ### **EKS**
 
@@ -54,7 +54,7 @@ It can provide a way to start, run, and scale Kubernetes.
 - On-premises, EKS provides a consistent, fully-supported Kubernetes solution with integrated tooling and simple deployment to AWS Outposts, virtual machines, or bare metal servers.
 - Elastic Load Balancing for load distribution.
 
-<img src='C:\Users\Asilkan\Desktop\100DaysOfCloud\100DaysOfCloud\images\EKS.png'>
+<img src='/images/EKS.png'>
 
 ### **AWS Fargate**
 
@@ -62,7 +62,7 @@ It can be used with ECS to run containers without managing servers or cluster of
 
 - Each Fargate task has its own isolation boundary and doesn’t share the underlying kernel, CPU resources, memory resources, or elastic network interface with another task.
 
-<img src='C:\Users\Asilkan\Desktop\100DaysOfCloud\100DaysOfCloud\images\Fargate.png'>
+<img src='/images/Fargate.png'>
 
 ## AWS Database
 
@@ -75,13 +75,13 @@ Fully managed relational database engine that’s compatible with PostreSQL and 
 - It also automates and standardizes database clustering and replication.
 - Aurora Serverless automate the processes of monitoring the workload and adjusting the capacity for your databases. Auto scaling exists and you're charged only for the resources that your database clusters consume.
 
-<img src='C:\Users\Asilkan\Desktop\100DaysOfCloud\100DaysOfCloud\images\Aurora.png'>
+<img src='/images/Aurora.png'>
 
 ### **RDS Proxy**
 
 With this, your applications can pool and share database connections to improve their ability to scale. RDS Proxy makes applications more resilient to database failures by automatically connecting to a standby DB instance, while preserving application connections. By using RDS Proxy, you can also enforce AWS Identity and Access Management (IAM) authentication for databases, and securely store credentials in AWS Secrets Manager.
 
-<img src='C:\Users\Asilkan\Desktop\100DaysOfCloud\100DaysOfCloud\images\rds_proxy.png'>
+<img src='/images/rds_proxy.png'>
 
 ### DynamoDB Streams
 
@@ -95,12 +95,12 @@ DynamoDB Streams captures a time-ordered sequence of item-level modifications in
 - **OLD_IMAGE** —The entire item as it appears before it was modified
 - **NEW_AND_OLD_IMAGES** —Both the new and the old images of the item
 
-### **Event-Driven Architectures**
+## **Event-Driven Architectures**
 
 An event-driven architecture uses events to invoke and communicate between decoupled services. It has three main components which are event producers, event routers and event consumers.
 A producer publishes an event to the router, which filters and pushes the events to consumers. Producer services and consumer services are decoupled, which means that they can be scaled, updated, and deployed independently.
 
-<img src='C:\Users\Asilkan\Desktop\100DaysOfCloud\100DaysOfCloud\images\event_driven.png'>
+<img src='/images/event_driven.png'>
 
 ### Amazon EventBridge
 
@@ -108,7 +108,7 @@ EventBridge is a serverless event bus service that you can use to connect your a
 
 All events that come to EventBridge are associated with an event bus. Rules are tied to a single event bus, so they can only be applied to events on that event bus.
 
-<img src='C:\Users\Asilkan\Desktop\100DaysOfCloud\100DaysOfCloud\images\EventBridge.png'>
+<img src='/images/EventBridge.png'>
 
 ### **SNS**
 
@@ -116,15 +116,15 @@ Amazon SNS is a managed service that provides message delivery from publishers t
 
 - It also supports payload-based message filtering
 
-<img src='C:\Users\Asilkan\Desktop\100DaysOfCloud\100DaysOfCloud\images\SNS.png'>
+<img src='/images/SNS.png'>
 
-### Decoupling
+## Decoupling
 
 ### SQS
 
 Amazon SQS is fully managed message queuing service for decoupling.
 
-<img src='C:\Users\Asilkan\Desktop\100DaysOfCloud\100DaysOfCloud\images\SQS.png'>
+<img src='/images/SQS.png'>
 
 - Visibility timeout: The length of time that a message received from a queue (by one consumer) won't be visible to the other message consumers.
 - Message retention period: The amount of time that Amazon SQS retains messages that remain in the queue. By default, the queue retains messages for 4 days. You can configure a queue to retain messages for up to 14 days.
